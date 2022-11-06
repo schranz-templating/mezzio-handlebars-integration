@@ -30,11 +30,14 @@ $aggregator = new ConfigAggregator([
 The following configuration is available:
 
 ```php
+// src/App/src/ConfigProvider.php
+
 class ConfigProvider
 {
     public function __invoke(): array
     {
         return [
+            // ...
             'handlebars' => [
                 'path' => 'src/App/templates',
                 'cache_dir' => 'data/cache/handlebars',
